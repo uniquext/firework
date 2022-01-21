@@ -1,0 +1,16 @@
+canvas {
+    display: block;
+}
+
+.block-audio {
+    display: none;
+}
+body{padding: 0px;margin: 0px}
+
+
+*{margin:0;padding:0;}
+#elCanvas {
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
