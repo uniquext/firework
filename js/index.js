@@ -556,7 +556,7 @@ $(function() {
         return color;
     }
     function makeFireLoveWork(love) {
-        var color = '#ff0000';
+        var color = '#e03636';
         var velocity = Math.random() + 5;
         var max = fireLove * 2;
         for (var i = 0; i < max; i++) {
@@ -564,11 +564,11 @@ $(function() {
             var fireLoveWork = {
                 x: love.x,
                 y: love.far,
-                size: 2,
-                fill: '#e31a1a',
+                size: 1,
+                fill: color,
                 vx: Math.cos(rad) * velocity + (Math.random() - 0.5) * 0.5,
                 vy: Math.sin(rad) * velocity + (Math.random() - 0.5) * 0.5,
-                ay: 0.2,
+                ay: 0.08,
                 alpha: 1,
                 life: 180
             };
@@ -584,11 +584,11 @@ $(function() {
             var fireLoveWork = {
                 x: love.x,
                 y: love.far,
-                size: 1,
+                size: Math.random() + 1.5,
                 fill: color,
                 vx: Math.cos(rad) * velocity * Math.random(),
                 vy: Math.sin(rad) * velocity * Math.random(),
-                ay: 0.2,
+                ay: 0.08,
                 alpha: 1,
                 life: 180
             };
